@@ -1,26 +1,49 @@
 .header {
+  position: sticky;
+  top: 0;
   width: 100%;
-  background-color: #1e293b;
-  color: white;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
 }
 
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 2rem;
-
+  padding: 16px 24px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
-.header nav a {
-  margin-left: 1.5rem;
-  color: white;
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.logo span {
+  color: #222;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
   text-decoration: none;
+  font-size: 0.95rem;
+  color: #444;
   font-weight: 500;
 }
 
-.header nav a:hover {
-  text-decoration: underline;
+.nav a:hover {
+  color: #2e7d32;
+}
+
+.header-actions .btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }

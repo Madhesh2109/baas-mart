@@ -14,10 +14,10 @@ Unnecessary complexity is intentionally avoided.
 
 <h3>🚫 Scope & Limitations</h3>
 The following features are deliberately excluded: <br>
--> Online ordering or payments <br>
--> Shopping cart functionality <br>
--> User accounts or authentication <br>
--> Backend services or databases <br>
+* Online ordering or payments <br>
+* Shopping cart functionality <br>
+* User accounts or authentication <br>
+* Backend services or databases <br>
 These can be introduced later only if business requirements change.
 
 <h3>✅ Key Features</h3>
@@ -37,7 +37,7 @@ The project is designed to be simple to maintain and easy to deploy.
 <h3>🚀 Local Development</h3>
 Prerequisites <br>
     Node.js (v18+ recommended) <br>
-    npm or yarn <br>
+    npm or yarn <br> <br>
 
 Setup <br>
     git clone https://github.com/your-username/bass-mart.git <br>

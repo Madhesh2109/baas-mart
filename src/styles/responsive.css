@@ -1,0 +1,122 @@
+/* =================================================
+   RESPONSIVE STYLES
+   Rule: ONLY media queries live in this file
+   ================================================= */
+
+
+/* =================================================
+   MOBILE (≤ 768px)
+   Purpose: Fast actions, single column, thumb-friendly
+   ================================================= */
+
+@media (max-width: 768px) {
+
+  /* ===== Header ===== */
+  .nav {
+    display: none;
+  }
+
+  .header-container {
+    padding: 12px 16px;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  /* ===== Hero ===== */
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ===== Why Choose Us ===== */
+  .reason {
+    padding: 16px;
+  }
+
+  /* ===== Product Categories ===== */
+  /* Grid already collapses naturally to 1 column */
+
+  /* ===== Location & Timings ===== */
+  .location-actions {
+    flex-direction: column;
+  }
+
+  .location-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .map iframe {
+    height: 250px;
+  }
+}
+
+
+/* =================================================
+   TABLET (769px – 1024px)
+   Purpose: Balanced layout, controlled density
+   ================================================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* ===== Header ===== */
+  .nav {
+    display: flex;
+    gap: 16px;
+  }
+
+  .header-container {
+    padding: 14px 20px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  /* ===== Hero ===== */
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.2rem;
+  }
+
+  .hero-description {
+    max-width: 500px;
+  }
+
+  /* ===== Why Choose Us ===== */
+  .reasons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ===== Product Categories ===== */
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ===== Location & Timings ===== */
+  .map iframe {
+    height: 280px;
+  }
+}

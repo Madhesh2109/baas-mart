@@ -1,14 +1,25 @@
 import React from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Hero from './components/Hero'
+import About from './components/About'
+import WhyChooseUs from './components/WhyChooseUs'
+import ProductCategories from './components/ProductCategories'
+import LocationTimings from './components/LocationTimings'
 
 function App() {
   return (
     <div className='app-layout'>
       <Header />
+
       <main className='content'>
-        <h1 style={{ padding: "2rem" }}>Welcome to Baas Mart</h1>
+        <Hero />
+        <About/>
+        <WhyChooseUs />
+        <ProductCategories />
+        <LocationTimings />
       </main>
+      
       <Footer />
     </div>
   )
