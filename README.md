@@ -1,19 +1,18 @@
-🛒 Baas Mart – Grocery Store Website
+<h1>🛒 Baas Mart – Grocery Store Website</h1>
 
 Baas Mart is a lightweight, single-page website built to present essential information about a local grocery store.
 The project focuses on clarity, performance, and simplicity rather than complex features.
 
 This is an informational website, not an e-commerce platform(temporarily).
 
-🎯 Purpose
-
+<h3>🎯 Purpose</h3>
 The website exists to:
 1. Establish a professional online presence for the store
 2. Communicate store details clearly to customers
 3. Build trust through a clean and responsive interface
 Unnecessary complexity is intentionally avoided.
 
-🚫 Scope & Limitations
+<h3>🚫 Scope & Limitations</h3>
 The following features are deliberately excluded:
 -> Online ordering or payments
 -> Shopping cart functionality
@@ -21,21 +20,21 @@ The following features are deliberately excluded:
 -> Backend services or databases
 These can be introduced later only if business requirements change.
 
-✅ Key Features
+<h3>✅ Key Features</h3>
     Responsive and mobile-friendly design
     Store branding and introduction
     Product category overview
     Store timings and contact details
     Fast-loading static single-page application
 
-🛠 Technology Overview
+<h3>🛠 Technology Overview</h3>
 Frontend: React
 Build Tool: Vite
 Styling: CSS / Flexbox
 Deployment: Static hosting platforms
 The project is designed to be simple to maintain and easy to deploy.
 
-🚀 Local Development
+<h3>🚀 Local Development</h3>
 Prerequisites
     Node.js (v18+ recommended)
     npm or yarn
@@ -52,16 +51,16 @@ Create a production build:
 
 The generated files can be deployed to any static hosting service such as Netlify, Vercel, or GitHub Pages.
 
-🔮 Future Enhancements
+<h3>🔮 Future Enhancements</h3>
 If business requirements evolve, the following may be considered:
-Google Maps embed
-Content management system (CMS)
-Multi-language support
+    Google Maps embed
+    Content management system (CMS)
+    Multi-language support
 Enhancements should be driven by real business needs, not speculation.
 
-📄 License
+<h3>📄 License</h3>
 This project is intended for commercial informational use for a local business.
 
-👤 Developed By
+<h2>👤 Developed By</h2>
 VVM Systems
 Web & IT Services
