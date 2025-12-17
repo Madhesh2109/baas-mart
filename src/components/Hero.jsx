@@ -2,24 +2,26 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero-content">
-        <h1>Baas Mart</h1>
+        <h1>Homemade Masalas</h1>
+
         <p className="hero-tagline">
-          Your Trusted Local Grocery Store
+          Made the Traditional Way
         </p>
 
         <p className="hero-description">
-          Fresh vegetables, groceries, and daily essentials at honest prices.
-          Serving the local community with quality and trust.
+          BAASS Homemade Products brings you carefully prepared masalas made
+          from handpicked ingredients, ground in small batches to preserve
+          aroma, taste, and purity — just like home.
         </p>
 
         <div className="hero-actions">
-          <a href="tel:+918428333607" className="btn primary">
-            WhatsApp
+          <a href="#products" className="btn primary">
+            View Products
           </a>
-          <a href="#location" className="btn secondary">
-            Visit Store
+          <a href="#contact" className="btn secondary">
+            Contact Us
           </a>
         </div>
       </div>

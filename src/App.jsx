@@ -1,11 +1,11 @@
 import React from 'react'
 import Header from './components/Header'
-import Footer from './components/Footer'
 import Hero from './components/Hero'
 import About from './components/About'
-import WhyChooseUs from './components/WhyChooseUs'
-import ProductCategories from './components/ProductCategories'
-import LocationTimings from './components/LocationTimings'
+import Products from './components/Products'
+import WhyOurMasalas from './components/WhyOurMasalas'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -15,9 +15,9 @@ function App() {
       <main className='content'>
         <Hero />
         <About/>
-        <WhyChooseUs />
-        <ProductCategories />
-        <LocationTimings />
+        <Products />
+        <WhyOurMasalas />
+        <Contact />
       </main>
       
       <Footer />

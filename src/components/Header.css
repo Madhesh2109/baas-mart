@@ -17,9 +17,9 @@
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  color: #2e7d32;
+  color: #8d2e2e; /* earthy masala tone */
 }
 
 .logo span {
@@ -39,11 +39,5 @@
 }
 
 .nav a:hover {
-  color: #2e7d32;
-}
-
-.header-actions .btn {
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 0.9rem;
+  color: #8d2e2e;
 }

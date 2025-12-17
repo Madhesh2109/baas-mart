@@ -5,20 +5,16 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          Baas<span>Mart</span>
+          BAASS<span>Homemade</span>
         </div>
 
         <nav className="nav">
+          <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#categories">Products</a>
-          <a href="#location">Location</a>
+          <a href="#products">Products</a>
+          <a href="#why">Why Our Masala</a>
+          <a href="#contact">Contact</a>
         </nav>
-
-        <div className="header-actions">
-          <a href="tel:+918428333607" className="btn primary">
-            Call Now
-          </a>
-        </div>
       </div>
     </header>
   );
