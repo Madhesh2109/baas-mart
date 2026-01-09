@@ -62,5 +62,5 @@ Enhancements should be driven by real business needs, not speculation.
 This project is intended for commercial informational use for a local business.
 
 <h2>👤 Developed By</h2>
-VVM Systems
+Lyntric
 Web & IT Services

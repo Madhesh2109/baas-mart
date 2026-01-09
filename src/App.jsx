@@ -1,25 +1,29 @@
-import React from 'react'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import About from './components/About'
-import Products from './components/Products'
-import WhyOurMasalas from './components/WhyOurMasalas'
-import Contact from './components/Contact'
+import Opening from './components/Opening'
+import Origin from './components/Origin'
+import Process from './components/Process'
+import Principles from './components/Principles'
+import ProductReveal from './components/ProductReveal'
+import HumanClose from './components/HumanClose'
+import Order from './components/Order'
 import Footer from './components/Footer'
+
 
 function App() {
   return (
-    <div className='app-layout'>
+    <div className="app-layout">
       <Header />
 
-      <main className='content'>
-        <Hero />
-        <About/>
-        <Products />
-        <WhyOurMasalas />
-        <Contact />
+      <main className='story'>
+        <Opening />
+        <Origin />
+        <Process />
+        <Principles />
+        <ProductReveal />
+        <HumanClose />
+        <Order />
       </main>
-      
+
       <Footer />
     </div>
   )

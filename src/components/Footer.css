@@ -1,12 +1,41 @@
+/* ===== Footer Base ===== */
 .footer {
-  width: 100%;
-  background-color: #0f172a;
-  color: white;
+  background: linear-gradient(
+    180deg,
+    #0f1a17 0%,
+    #0b1412 100%
+  );
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
+/* ===== Inner Wrapper ===== */
+.footer-inner {
+  max-width: 720px;
+  margin: auto;
+  padding: 3rem 1.5rem;
   text-align: center;
 }
+
+/* ===== Brand Line ===== */
+.footer-line {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #f4f4ec;
+  margin-bottom: 0.4rem;
+}
+
+/* ===== Tagline ===== */
+.footer-sub {
+  font-size: 0.85rem;
+  color: #b9c2bb;
+  margin-bottom: 1.4rem;
+}
+
+/* ===== Copyright ===== */
+.footer-copy {
+  font-size: 0.75rem;
+  color: #7f8c85;
+}
+
+

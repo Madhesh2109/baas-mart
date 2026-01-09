@@ -1,23 +1,32 @@
+import { useEffect, useState } from "react";
 import "./Header.css";
 
-const Header = () => {
-  return (
-    <header className="header">
-      <div className="header-container">
-        <div className="logo">
-          BAASS<span>Homemade</span>
-        </div>
+export default function Header() {
+  const [visible, setVisible] = useState(false);
 
-        <nav className="nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#products">Products</a>
-          <a href="#why">Why Our Masala</a>
-          <a href="#contact">Contact</a>
-        </nav>
+  useEffect(() => {
+    const handleScroll = () => {
+      setVisible(window.scrollY > window.innerHeight * 0.6);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <header className={`header ${visible ? "show" : ""}`}>
+      <div className="header-inner">
+        <div className="logo">BAASS</div>
+
+        <a
+          href="https://wa.me/91XXXXXXXXXX"
+          className="header-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
       </div>
     </header>
   );
-};
-
-export default Header;
+}

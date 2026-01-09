@@ -1,13 +1,21 @@
 import "./Footer.css";
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <p>© {new Date().getFullYear()} Baas Homemade Products. All rights reserved.</p>
+      <div className="footer-inner">
+        <p className="footer-line">
+          BAASS Homemade Products
+        </p>
+
+        <p className="footer-sub">
+          Prepared in small batches. Made at home.
+        </p>
+
+        <p className="footer-copy">
+          © {new Date().getFullYear()} BAASS Homemade Products
+        </p>
       </div>
     </footer>
   );
 }
-
-export default Footer;

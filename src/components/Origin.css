@@ -1,0 +1,68 @@
+.origin {
+  position: relative;
+  background-color: #0f1a17;
+
+  /* Spice frame as background */
+  background-image: url("/images/spice-frame-origin.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding: 180px 0;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+/* Animate frame on scroll */
+.origin.show-frame {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Content */
+.origin-inner {
+  max-width: 620px;
+  margin: auto;
+  padding: 4rem 3rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease 0.6s, transform 0.8s ease 0.6s;
+}
+
+.origin.show-frame .origin-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Typography */
+.origin-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.25rem;
+  color: #f4f4ec;
+}
+
+.origin-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #d6d6cf;
+  margin-bottom: 1.5rem;
+}
+
+/* Mobile tuning */
+@media (max-width: 768px) {
+  .origin {
+    padding: 120px 0;
+    background-position: center;
+  }
+
+  .origin-inner {
+    padding: 3rem 1.5rem;
+  }
+}

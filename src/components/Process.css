@@ -1,0 +1,43 @@
+.process {
+  background: #faf7f2;
+}
+
+.process-inner {
+  max-width: 720px;
+  padding: 0 1.5rem;
+}
+
+.process-title {
+  font-size: 1.9rem;
+  margin-bottom: 2.5rem;
+  color: #2b2b2b;
+}
+
+.process-step {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.process-step::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 6px;
+  height: 6px;
+  background: #2b2b2b;
+  border-radius: 50%;
+}
+
+.process-step h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.process-step p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444;
+}
