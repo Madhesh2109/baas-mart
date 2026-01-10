@@ -4,7 +4,6 @@ import Origin from './components/Origin'
 import Process from './components/Process'
 import Principles from './components/Principles'
 import ProductReveal from './components/ProductReveal'
-import HumanClose from './components/HumanClose'
 import Order from './components/Order'
 import Footer from './components/Footer'
 
@@ -20,7 +19,6 @@ function App() {
         <Process />
         <Principles />
         <ProductReveal />
-        <HumanClose />
         <Order />
       </main>
 

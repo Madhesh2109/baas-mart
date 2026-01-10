@@ -11,7 +11,8 @@ body {
     "Segoe UI", Roboto, Arial, sans-serif;
   line-height: 1.65; /* calmer reading */
   color: #2b2b2b;
-  background-color: #fdfbf7; /* very slight warmth */
+  /* very slight warmth */
+  background-color: #fdfbf7; 
 }
 
 /* ===== App Layout ===== */
@@ -27,4 +28,13 @@ img {
 
 a {
   color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset for fixed header */
+section {
+  scroll-margin-top: 70px;
 }

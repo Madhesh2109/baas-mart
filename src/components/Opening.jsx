@@ -2,7 +2,7 @@ import "./Opening.css";
 
 export default function Opening() {
   return (
-    <section className="opening">
+    <section id="opening" className="opening">
       <div className="opening-inner">
         <p className="opening-eyebrow">
           Not a factory. Not a brand story.

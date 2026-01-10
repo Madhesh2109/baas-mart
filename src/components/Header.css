@@ -1,38 +1,131 @@
+/* ===== Base Header ===== */
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(4px);
   transform: translateY(-100%);
-  transition: transform 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
   z-index: 1000;
-  border-bottom: 1px solid #eee8de;
 }
 
 .header.show {
   transform: translateY(0);
 }
 
+/* ===== Light Theme ===== */
+.header.light {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #eee8de;
+}
+
+/* ===== Dark Theme ===== */
+.header.dark {
+  background: rgba(15, 26, 23, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Layout ===== */
 .header-inner {
-  max-width: 860px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0.8rem 1.5rem;
+  padding: 0.9rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* ===== Logo ===== */
 .logo {
   font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  transition: color 0.3s ease;
 }
 
-.header-cta {
-  font-size: 0.8rem;
-  text-decoration: none;
-  border: 1px solid #2b2b2b;
-  padding: 0.4rem 0.9rem;
+.header.light .logo {
   color: #2b2b2b;
+}
+
+.header.dark .logo {
+  color: #f4f4ec;
+}
+
+/* ===== Navigation ===== */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-link {
+  font-size: 0.78rem;
+  text-decoration: none;
+  position: relative;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+.header.light .nav-link {
+  color: #2b2b2b;
+}
+
+.header.dark .nav-link {
+  color: #d6d6cf;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+/* Active underline */
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1.5px;
+  transition: background 0.3s ease;
+}
+
+.header.light .nav-link.active::after {
+  background: #2b2b2b;
+}
+
+.header.dark .nav-link.active::after {
+  background: #f4f4ec;
+}
+
+/* Order CTA */
+.nav-cta {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.header.light .nav-cta {
+  border-color: #2b2b2b;
+}
+
+.header.dark .nav-cta {
+  border-color: #f4f4ec;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 900px) {
+  .nav {
+    gap: 0.8rem;
+  }
+
+  .nav-link {
+    font-size: 0.72rem;
+  }
 }

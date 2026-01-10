@@ -17,7 +17,7 @@ export default function Origin() {
   }, []);
 
   return (
-    <section className="origin">
+    <section id="origin" className="origin">
       <div className="origin-inner">
         <h2 className="origin-title">It didn’t start as a business.</h2>
 
