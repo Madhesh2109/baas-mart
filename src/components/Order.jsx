@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "./Order.css";
+import orderCharacter from '../assets/order-character.png';
 
 export default function Order() {
   useEffect(() => {
@@ -21,7 +22,7 @@ export default function Order() {
       {/* Anime-inspired character */}
       <div className="order-character" aria-hidden="true">
         <img
-          src={`${import.meta.env.BASE_URL}images/order-character.png`}
+          src={orderCharacter}
           alt="order-character"
         />
       </div>
