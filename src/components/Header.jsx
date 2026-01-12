@@ -58,7 +58,7 @@ export default function Header() {
       }`}
     >
       <div className="header-inner">
-        <div className="logo">BAASS</div>
+        <div className="logo">BAASS MART</div>
 
         <nav className="nav">
           {sections.map((s) => (
