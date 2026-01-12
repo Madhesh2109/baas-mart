@@ -1,4 +1,5 @@
 import "./Principles.css";
+import principlesChef from "../assets/principles-chef.png";
 
 export default function Principles() {
   return (
@@ -8,7 +9,7 @@ export default function Principles() {
         {/* Anime visual */}
         <div className="principles-visual">
           <img
-            src="/images/principles-chef.png"
+            src={principlesChef}
             alt="BAASS Masala chef principles"
           />
         </div>
