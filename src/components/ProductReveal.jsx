@@ -1,4 +1,7 @@
 import "./ProductReveal.css";
+import sambar from "../assets/sambar.png";
+import rasam from "../assets/sambar.png";
+import chilli from "../assets/chilli.png";
 
 export default function ProductReveal() {
   return (
@@ -9,7 +12,7 @@ export default function ProductReveal() {
         <div className="products-track">
           <div className="product-block">
             <div className="product-image">
-              <img src="/images/sambar.png" alt="Sambar Masala" />
+              <img src={sambar} alt="Sambar Masala" />
             </div>
             <h3>Sambar Masala</h3>
             <p>
@@ -20,7 +23,7 @@ export default function ProductReveal() {
 
           <div className="product-block">
             <div className="product-image">
-              <img src="/images/rasam.png" alt="Rasam Powder" />
+              <img src={rasam} alt="Rasam Powder" />
             </div>
             <h3>Rasam Powder</h3>
             <p>
@@ -31,7 +34,7 @@ export default function ProductReveal() {
 
           <div className="product-block">
             <div className="product-image">
-              <img src="/images/chilli.png" alt="Chilli Powder" />
+              <img src={chilli} alt="Chilli Powder" />
             </div>
             <h3>Chilli Powder</h3>
             <p>
