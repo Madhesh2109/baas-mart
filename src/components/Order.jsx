@@ -21,8 +21,8 @@ export default function Order() {
       {/* Anime-inspired character */}
       <div className="order-character" aria-hidden="true">
         <img
-          src="/images/order-character.png"
-          alt=""
+          src={`${import.meta.env.BASE_URL}images/order-character.png`}
+          alt="order-character"
         />
       </div>
 
