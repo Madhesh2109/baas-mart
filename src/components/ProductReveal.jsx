@@ -1,6 +1,6 @@
 import "./ProductReveal.css";
 import sambarPowder from "../assets/sambar.png";
-import rasamPowder from "../assets/sambar.png";
+import rasamPowder from "../assets/rasam.png";
 import chilliPowder from "../assets/chilli.png";
 
 export default function ProductReveal() {
