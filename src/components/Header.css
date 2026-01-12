@@ -65,6 +65,7 @@
 
 .nav-link {
   font-size: 0.78rem;
+  font-weight: 600;
   text-decoration: none;
   position: relative;
   opacity: 0.75;
