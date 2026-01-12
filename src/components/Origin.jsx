@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "./Origin.css";
+import "../assets/spice-frame-origin.png"
 
 export default function Origin() {
   useEffect(() => {
