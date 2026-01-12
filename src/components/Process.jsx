@@ -1,4 +1,7 @@
 import "./Process.css";
+import processWholeSpices from "../assets/process-whole-spices.png"
+import processGrinding from "../assets/process-grinding.png"
+import processPacking from "../assets/process-packing.png"
 
 export default function Process() {
   return (
@@ -9,7 +12,7 @@ export default function Process() {
         <div className="process-grid">
           <div className="process-card">
             <img
-              src="/images/process-whole-spices.png"
+              src={processWholeSpices}
               alt="Whole spices preparation"
             />
             <h3>We start with whole spices</h3>
@@ -21,7 +24,7 @@ export default function Process() {
 
           <div className="process-card">
             <img
-              src="/images/process-grinding.png"
+              src={processGrinding}
               alt="Small batch grinding"
             />
             <h3>Dried & ground in small batches</h3>
@@ -33,7 +36,7 @@ export default function Process() {
 
           <div className="process-card">
             <img
-              src="/images/process-packing.png"
+              src={processPacking}
               alt="Direct packing"
             />
             <h3>Packed and sold directly</h3>
