@@ -20,7 +20,7 @@ export default function ProductReveal() {
             <div className="product-image">
               <img src={sambarPowder} alt="Sambar Masala" />
             </div>
-            <h3>Sambar Masala</h3>
+            <h3>Sambar Powder</h3>
             <p>
               Balanced for everyday cooking — not overly spicy,
               not toned down for shelves.
